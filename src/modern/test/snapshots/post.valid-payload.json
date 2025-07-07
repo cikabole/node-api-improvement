@@ -1,0 +1,12 @@
+{
+    "name": "Some title",
+    "user": 2001,
+    "recurringPrice": 90,
+    "validFrom": "2023-01-01",
+    "validUntil": null,
+    "state": "expired",
+    "assignedBy": "Admin",
+    "paymentMethod": "credit card",
+    "billingInterval": "monthly",
+    "billingPeriods": 6
+}

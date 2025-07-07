@@ -1,0 +1,66 @@
+{
+    "membership": {
+        "name": "Some title",
+        "user": 2001,
+        "recurringPrice": 90,
+        "validFrom": "2023-01-01",
+        "validUntil": "2023-06-30",
+        "state": "expired",
+        "assignedBy": "Admin",
+        "paymentMethod": "credit card",
+        "billingInterval": "monthly",
+        "billingPeriods": 6,
+        "id": 5,
+        "uuid": "a4a464a8-d184-4eb2-860e-fe505883e745"
+    },
+    "membershipPeriods": [
+        {
+            "membershipId": 5,
+            "start": "2023-02-01",
+            "end": "2023-02-01",
+            "state": "planned",
+            "id": 6,
+            "uuid": "f3c5ca41-f449-48d8-b81f-1afb4e938d0d"
+        },
+        {
+            "membershipId": 5,
+            "start": "2023-07-30",
+            "end": "2023-07-30",
+            "state": "planned",
+            "id": 7,
+            "uuid": "acba21ec-193e-4bcd-b38c-f6e841cb9e39"
+        },
+        {
+            "membershipId": 5,
+            "start": "2023-07-30",
+            "end": "2023-07-30",
+            "state": "planned",
+            "id": 8,
+            "uuid": "a2e9bcf1-eaf5-4eae-92f2-ccd9db8a3c32"
+        },
+        {
+            "membershipId": 5,
+            "start": "2023-07-30",
+            "end": "2023-07-30",
+            "state": "planned",
+            "id": 9,
+            "uuid": "08d355f9-f2a0-4c7e-8253-89c31cbb05f6"
+        },
+        {
+            "membershipId": 5,
+            "start": "2023-07-30",
+            "end": "2023-07-30",
+            "state": "planned",
+            "id": 10,
+            "uuid": "f3bc88a5-12ea-44ba-9395-abbdead717c5"
+        },
+        {
+            "membershipId": 5,
+            "start": "2023-07-30",
+            "end": "2023-07-30",
+            "state": "planned",
+            "id": 11,
+            "uuid": "ab3c5a44-9a1a-4ea1-941f-296bce1d0bb2"
+        }
+    ]
+}

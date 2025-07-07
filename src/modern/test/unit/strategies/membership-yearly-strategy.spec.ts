@@ -1,0 +1,47 @@
+import { MembershipYearlyStrategy } from "../../../src/strategies/membership-yearly-strategy";
+
+describe("MembershipYearlyStrategy", () => {
+  const inputData = [
+    { billingPeriods: 1, resultDate: new Date("2026-01-01T00:00:00.000Z") },
+    { billingPeriods: 2, resultDate: new Date("2027-01-01T00:00:00.000Z") },
+    { billingPeriods: 3, resultDate: new Date("2028-01-01T00:00:00.000Z") },
+  ];
+
+  it.each(inputData)(
+    "calculates correct membership expiry date",
+    ({ billingPeriods, resultDate }) => {
+      const strategy = new MembershipYearlyStrategy();
+      expect(
+        strategy.calculateMembershipExpiry(
+          new Date("2025-01-01"),
+          billingPeriods
+        )
+      ).toStrictEqual(resultDate);
+    }
+  );
+
+  const periodDates = [
+    {
+      startDate: new Date("2025-01-01T00:00:00.000Z"),
+      endDate: new Date("2026-01-01T00:00:00.000Z"),
+    },
+    {
+      startDate: new Date("2025-02-01T00:00:00.000Z"),
+      endDate: new Date("2026-02-01T00:00:00.000Z"),
+    },
+    {
+      startDate: new Date("2025-03-01T00:00:00.000Z"),
+      endDate: new Date("2026-03-01T00:00:00.000Z"),
+    },
+  ];
+
+  it.each(periodDates)(
+    "calculates correct membership period expiry date",
+    ({ startDate, endDate }) => {
+      const strategy = new MembershipYearlyStrategy();
+      expect(strategy.calculateMembershipPeriodExpiry(startDate)).toStrictEqual(
+        endDate
+      );
+    }
+  );
+});

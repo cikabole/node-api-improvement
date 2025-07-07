@@ -1,13 +1,25 @@
 {
   "compilerOptions": {
-    "target": "es6",
-    "module": "commonjs",
-    "rootDir": "./src",
+    "module": "nodenext",
     "outDir": "./dist",
-    "esModuleInterop": true,
     "resolveJsonModule": true,
+    "rootDir": "./src",
     "strict": true,
-    "allowJs": true  // Allows TypeScript to process JavaScript files
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": true,
+    "noFallthroughCasesInSwitch": false,
+    "noImplicitAny": false,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strictBindCallApply": false,
+    "strictNullChecks": true,
+    "target": "ES2023"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]
